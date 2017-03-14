@@ -1,0 +1,1 @@
+This is a file Meta Service that return the file size of any document submitted
