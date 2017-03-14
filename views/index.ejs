@@ -8,62 +8,26 @@
         
         <div class=container>
             <div class=col-md-12 id=myheader>
-                <span class="text-center" ><h1>JSON API : Timestamp Microservice</h1></span>
-            </div>
-            <div class=col-md-12>
-                <h2>User stories: </h2>
-                <ul>
-                    <li><h3>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
-                           </h3> </li>
-                    <li> <h3>If it does, it returns both the Unix timestamp and the natural language form of that date.
-                              </h3>  </li>
-                    <li> <h3>If it does not contain a date or Unix timestamp, it returns null for those properties.
-                          </h3></li>
-                </ul>
-                
-                
+                <span class="text-center" ><h1>File Metadata Microservice</h1></span>
             </div>
             
+            <div >
+                <span id=story><h3>Submit a File to view file size</h3></span>
+            </div>
             
-                
-                <div class=col-md-8>
-                
-                <span><h3>Example usage:</h3></span>
-                <div class=specols>
+            <div>
+                <form action="/filedata" method="post" enctype="multipart/form-data">
                     
-                    <div >
-                      https://holatimestamp.herokuapp.com//December%2015,%202015
-                </div>
-                <div>
-                     https://holatimestamp.herokuapp.com//1450137600
-                </div>
-                    
-                </div>
-                
-          
-          
-           
-            </div>
-            
-            
-            <div class=col-md-8>
-                <span><h3>Example output:</h3></span>
-                <div class=specols>
-                    { "unix": 1450137600, "natural": "December 15, 2015 " }
-                    
-                </div>
-            
+                    <div id=upload>
+                            <input class="btn btn-lg btn-info" name=file type=file>
+                    </div>
+                             <div id=submit>
+                                    <input class="btn btn-sm btn-primary" type=submit>
+                                </div> 
+                             
+                            </form>
                 
             </div>
-                
-                
-                
-           
-            
-            
-            
         </div>
-        
-        
     </body>
 </html>

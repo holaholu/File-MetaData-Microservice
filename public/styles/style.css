@@ -1,20 +1,23 @@
 #myheader{
-    color:red;
+    color:blue;
      box-shadow: -10px 10px 30px #000000;
      margin-top:30px;
 }
 
 #mybody{
     color: blue;
-    background-color:#B3A1CF;
+    background-color:#D14D8F;
 }
 
-.specols{
-    color:red;
+
+
+#story{
+   margin:50px;
+}
+#upload{
+     margin:50px;
+}
+#submit{
+     margin:50px;
 }
 
-#myexam{
-     box-shadow: -10px 10px 30px #000000;
-    border:solid red 1px;
-    
-}
